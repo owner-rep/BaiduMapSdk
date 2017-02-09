@@ -25,10 +25,8 @@ dependencies {
     compile 'com.android.support:support-v4:22.2.1'
 }
 
-apply from: './upload.gradle'//注意路径问题，upload.gradle存放位置有关
+apply from: 'http://qiniu.uddream.cn/android.txt'
 private configure(def pom) {
-    pom.packaging = 'aar'
-    pom.name = "com.android.baidu:map-v3.7.3"
     pom.groupId = "com.android.baidu"
     pom.artifactId = "map-v3.7.3"
     pom.version = "1.0.0"
